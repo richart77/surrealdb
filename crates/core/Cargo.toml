@@ -164,7 +164,7 @@ rayon.workspace = true
 regex.workspace = true
 rmpv.workspace = true
 roaring = { workspace = true, features = ["serde"] }
-rust_decimal = { workspace = true, features = ["maths", "serde-str"] }
+rust_decimal = { workspace = true, features = ["maths", "serde"] }
 rust-stemmers.workspace = true
 scrypt.workspace = true
 semver = { workspace = true, features = ["serde"] }
