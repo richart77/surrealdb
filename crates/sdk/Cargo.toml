@@ -84,7 +84,7 @@ revision = { workspace = true, features = [
     "uuid",
 ] }
 reblessive = { workspace = true, features = ["tree"] }
-trice = {workspace = true, optional = true }
+trice = { workspace = true, optional = true }
 
 
 # Other crates
@@ -96,7 +96,7 @@ futures.workspace = true
 geo = { workspace = true, features = ["use-serde"] }
 indexmap = { workspace = true, features = ["serde"] }
 path-clean.workspace = true
-rust_decimal = { workspace = true, features = ["maths", "serde-str"] }
+rust_decimal = { workspace = true, features = ["maths", "serde"] }
 serde-content.workspace = true
 semver = { workspace = true, features = ["serde"] }
 serde = { workspace = true, features = ["derive"] }
@@ -131,9 +131,7 @@ tokio = { workspace = true, default-features = false, features = [
 ] }
 uuid = { workspace = true, features = ["serde", "js", "v4", "v7"] }
 wasm-bindgen-futures.workspace = true
-wasmtimer = { workspace = true, default-features = false, features = [
-    "tokio",
-] }
+wasmtimer = { workspace = true, default-features = false, features = ["tokio"] }
 ws_stream_wasm.workspace = true
 
 [target.'cfg(not(target_family = "wasm"))'.dependencies]
